@@ -1,0 +1,55 @@
+.burgerBtnWrap {
+    border-radius: 0px;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #47c145;
+  }
+  
+  .burger:focus,
+  .burger:focus-visible {
+    outline: none;
+  }
+  
+  .burger {
+    padding: 0;
+    width: 25px;
+    height: 19px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    background:#47c145;
+    outline: none;
+  }
+  
+  .burger .line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+  
+  .burger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .burger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
